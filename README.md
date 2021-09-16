@@ -1,2 +1,0 @@
-# ExampleMod
-minecraft mod
