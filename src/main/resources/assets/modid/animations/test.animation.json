@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"freeze_body": {
+			"loop": true,
+			"animation_length": 0.1,
+			"bones": {
+				"turret_body": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"shoot": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"turret_head_cannon": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0, 5]
+						},
+						"0.4583": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		},
+		"idle": {
+			"loop": true,
+			"animation_length": 10,
+			"bones": {
+				"turret_head": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 90, 0]
+						},
+						"5.0": {
+							"vector": [0, -90, 0],
+							"easing": "linear"
+						},
+						"10.0": {
+							"vector": [0, 90, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		}
+	}
+}

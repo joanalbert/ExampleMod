@@ -1,0 +1,60 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Test",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "turret_head",
+					"pivot": [0, 53, 0],
+					"cubes": [
+						{"origin": [-1, 53, 0], "size": [1, 1, 1], "inflate": 6, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "turret_head_cannon",
+					"parent": "turret_head",
+					"pivot": [-0.5, 53.5, 0.5],
+					"cubes": [
+						{"origin": [-1, 53, -14], "size": [1, 1, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "turret_body",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "turret_body_pole",
+					"parent": "turret_body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1, 2, -1], "size": [2, 45, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "turret_body_base_2",
+					"parent": "turret_body_pole",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 1, -6], "size": [12, 1, 12], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "turret_body_base",
+					"parent": "turret_body_base_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 1, 16], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
